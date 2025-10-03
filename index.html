@@ -14,11 +14,27 @@
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Hidden static form for Netlify to index -->
+    <!-- Hidden static form for Netlify to index -->
+    <!-- <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="firstname" />
+      <input type="text" name="lastname" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form> -->
+
     <form
       name="contact"
-      netlify
+      method="POST"
+      data-netlify="true"
       netlify-honeypot="bot-field"
-      style="display: none"
+      hidden
+      style="display: none; visibility: hidden; height: 0; overflow: hidden"
     >
       <input type="text" name="firstname" />
       <input type="text" name="lastname" />
