@@ -38,10 +38,9 @@ const Navbar = () => {
               </a>
             </li>
             <a
-              classname="contact-btn"
-              href="/resume.pdf"
-              download
               className="contact-btn"
+              href="/Hiranmai_React_Frontend_Fresher.pdf"
+              download
             >
               📄 Resume
             </a>
