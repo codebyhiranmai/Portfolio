@@ -4,12 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../index.css";
 import App from "../App";
-// import reportWebVitals from "./reportWebVitals";
+import frontendIcon from "../assets/front-end.png";
+import toolsIcon from "../assets/tools.png";
+import softskillsIcon from "../assets/softskills.png";
 
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: "src/assets/front-end.png",
+    icon: frontendIcon,
     skills: [
       { skill: "HTML5", percentage: "85%" },
       { skill: "CSS3", percentage: "80%" },
@@ -19,7 +21,7 @@ export const SKILLS = [
   },
   {
     title: "Tools",
-    icon: "src/assets/tools.png",
+    icon: toolsIcon,
     skills: [
       { skill: "Git & GitHub", percentage: "85%" },
       { skill: "Visual Studio Code", percentage: "75%" },
@@ -28,7 +30,7 @@ export const SKILLS = [
   },
   {
     title: "Soft Skills",
-    icon: "src/assets/softskills.png",
+    icon: softskillsIcon,
     skills: [
       { skill: "Problem Solving", percentage: "80%" },
       { skill: "Collaboration", percentage: "75%" },
