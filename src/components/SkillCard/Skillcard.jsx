@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillCard.css";
+import "./Skillcard.css";
 
 export default function SkillCard({ title, iconUrl, isActive, onClick }) {
   return (
