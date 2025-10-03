@@ -1,24 +1,3 @@
-// import React from "react";
-// import "./ContactForm.css";
-
-// export default function ContactForm() {
-//   return (
-//     <div className="contact-form-content">
-//       <form>
-//         <div className="name-container">
-//           <input type="text" name="firstname" placeholder="First Name" />
-//           <input type="text" name="lastname" placeholder="Last Name" />
-//         </div>
-
-//         <input type="text" name="email" placeholder="Email" />
-//         <textarea type="text" name="message" placeholder="Message" rows={3} />
-
-//         <button>SEND</button>
-//       </form>
-//     </div>
-//   );
-// }
-
 import React, { useState } from "react";
 import "./ContactForm.css";
 
@@ -54,6 +33,7 @@ export default function ContactForm() {
 
   return (
     <div className="contact-form-content">
+      {/* ✅ The actual user-facing form */}
       <form
         name="contact"
         method="POST"
@@ -61,9 +41,10 @@ export default function ContactForm() {
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
+        {/* Required hidden input */}
         <input type="hidden" name="form-name" value="contact" />
 
-        {/* Honeypot field for spam protection */}
+        {/* Honeypot for bots */}
         <p hidden>
           <label>
             Don’t fill this out:{" "}
@@ -108,6 +89,14 @@ export default function ContactForm() {
         />
 
         <button type="submit">SEND</button>
+      </form>
+
+      {/* ✅ Hidden static form for Netlify to detect during build */}
+      <form name="contact" netlify hidden>
+        <input type="text" name="firstname" />
+        <input type="text" name="lastname" />
+        <input type="email" name="email" />
+        <textarea name="message" />
       </form>
     </div>
   );
