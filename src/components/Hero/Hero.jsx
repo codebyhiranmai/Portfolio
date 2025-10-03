@@ -1,6 +1,12 @@
 import React from "react";
 import "./Hero.css";
 
+import reactLogo from "../../assets/react.png";
+import heroImage from "../../assets/hero.jpeg";
+import htmlLogo from "../../assets/html.png";
+import cssLogo from "../../assets/css.png";
+import jsLogo from "../../assets/js.png";
+
 function Hero() {
   return (
     <section className="hero-container">
@@ -15,20 +21,20 @@ function Hero() {
       <div className="hero-img">
         <div>
           <div className="tech-icon">
-            <img src="src\assets\react.png" alt="" />
+            <img src={reactLogo} alt="React" />
           </div>
-          <img src="src\assets\hero.jpeg" alt="" />
+          <img src={heroImage} alt="Hero" />
         </div>
 
         <div className="tech-container">
           <div className="tech-icon" style={{ width: "3rem", height: "3rem" }}>
-            <img src="src\assets\html.png" alt="" />
+            <img src={htmlLogo} alt="HTML" />
           </div>
           <div className="tech-icon" style={{ width: "3rem", height: "3rem" }}>
-            <img src="src\assets\css.png" alt="" />
+            <img src={cssLogo} alt="CSS" />
           </div>
           <div className="tech-icon" style={{ width: "3rem", height: "3rem" }}>
-            <img src="src\assets\js.png" alt="" />
+            <img src={jsLogo} alt="JavaScript" />
           </div>
         </div>
       </div>

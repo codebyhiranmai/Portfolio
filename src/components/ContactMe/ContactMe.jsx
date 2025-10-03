@@ -3,6 +3,10 @@ import "./ContactMe.css";
 import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 import ContactForm from "./ContactForm/ContactForm";
 
+// ✅ Image imports
+import mailIcon from "../../assets/mail.png";
+import githubIcon from "../../assets/github.png";
+
 export default function ContactMe() {
   return (
     <section className="contact-container">
@@ -11,11 +15,11 @@ export default function ContactMe() {
       <div className="contact-content">
         <div style={{ flex: 1 }}>
           <ContactInfoCard
-            iconUrl="src\assets\mail.png"
+            iconUrl={mailIcon}
             text="hiranmaikuruvella@gmail.com"
           />
           <ContactInfoCard
-            iconUrl="src\assets\github.png"
+            iconUrl={githubIcon}
             text="https://github.com/codebyhiranmai"
           />
         </div>
