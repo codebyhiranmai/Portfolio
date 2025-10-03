@@ -33,7 +33,6 @@ export default function ContactForm() {
 
   return (
     <div className="contact-form-content">
-      {/* ✅ The actual user-facing form */}
       <form
         name="contact"
         method="POST"
@@ -41,7 +40,6 @@ export default function ContactForm() {
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
-        {/* Required hidden input */}
         <input type="hidden" name="form-name" value="contact" />
 
         {/* Honeypot for bots */}
@@ -90,14 +88,16 @@ export default function ContactForm() {
 
         <button type="submit">SEND</button>
       </form>
-
-      {/* ✅ Hidden static form for Netlify to detect during build */}
-      <form name="contact" netlify hidden>
-        <input type="text" name="firstname" />
-        <input type="text" name="lastname" />
-        <input type="email" name="email" />
-        <textarea name="message" />
-      </form>
     </div>
   );
 }
+
+// ✅ Hidden form for Netlify detection (outside the visible return)
+export const NetlifyHiddenForm = () => (
+  <form name="contact" netlify hidden>
+    <input type="text" name="firstname" />
+    <input type="text" name="lastname" />
+    <input type="email" name="email" />
+    <textarea name="message" />
+  </form>
+);
