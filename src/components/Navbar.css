@@ -17,8 +17,10 @@
 }
 
 .logo {
-  width: 12rem;
+  width: 30rem;
   height: auto;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .nav-content ul {

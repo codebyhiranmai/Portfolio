@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
+import About from "./components/About/About.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import ContactMe from "./components/ContactMe/ContactMe.jsx";
@@ -15,6 +16,9 @@ function App() {
       <div className="container">
         <section id="home">
           <Hero />
+        </section>
+        <section id="about">
+          <About />
         </section>
         <section id="skills">
           <Skills />

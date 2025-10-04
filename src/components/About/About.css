@@ -1,0 +1,26 @@
+.about {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02); /* light glass effect */
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  backdrop-filter: blur(8px); /* elegant soft blur */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* subtle border */
+  cursor: pointer;
+  border: 1.5px solid #6751b9;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.about:hover {
+  background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+}

@@ -15,11 +15,16 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img className="logo" src="" alt="" />
+          <div className="logo">Hiranmai Kuruvella</div>
           <ul>
             <li>
               <a className="menu-item" href="#home">
                 Home
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#about">
+                About
               </a>
             </li>
             <li>

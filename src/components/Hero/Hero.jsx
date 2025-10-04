@@ -6,15 +6,16 @@ import heroImage from "../../assets/hero.jpeg";
 import htmlLogo from "../../assets/html.png";
 import cssLogo from "../../assets/css.png";
 import jsLogo from "../../assets/js.png";
+import About from "../About/About";
 
 function Hero() {
   return (
     <section className="hero-container">
       <div className="hero-content">
-        <h2>Building Digital Experiences that Inspire</h2>
+        <h2>Hi, I'm HIRANMAI KURUVELLA</h2>
         <p>
-          Passionate Frontend Developer | Transforming Ideas into seamless and
-          visually stunning web solutions
+          A recent graduate and an aspiring frontend developer with a strong
+          interest in building clean, responsive websites and applications.{" "}
         </p>
       </div>
 

@@ -35,7 +35,7 @@ export default function Projects() {
 
   return (
     <section className="projects-container">
-      <h5>Projects</h5>
+      <h5>PROJECTS</h5>
 
       <div className="projects-content">
         <div className="arrow-right" onClick={slideRight}>

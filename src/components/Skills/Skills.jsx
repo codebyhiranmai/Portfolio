@@ -13,7 +13,7 @@ export default function Skills() {
   }
   return (
     <section className="skills-container">
-      <h5>Technical Proficiency</h5>
+      <h5>SKILLS</h5>
 
       <div className="skills-content">
         <div className="skills">

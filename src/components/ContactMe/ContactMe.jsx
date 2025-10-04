@@ -10,7 +10,7 @@ import githubIcon from "../../assets/github.png";
 export default function ContactMe() {
   return (
     <section className="contact-container">
-      <h5>Contact Me</h5>
+      <h5>CONTACT ME</h5>
 
       <div className="contact-content">
         <div style={{ flex: 1 }}>
