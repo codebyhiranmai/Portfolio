@@ -48,3 +48,9 @@
     right: 0rem;
   }
 }
+
+@media (min-width: 100px) {
+  .projects-content {
+    width: 100%;
+  }
+}
